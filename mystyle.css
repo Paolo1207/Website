@@ -1,0 +1,1186 @@
+
+@import url('https://fonts.cdnfonts.com/css/futura-pt?styles=117663');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,200&display=swap');
+
+
+
+
+body
+{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    background-color: #24252A;
+    color:black;
+    background-attachment: fixed;
+}
+
+/* Home.html */
+
+.coverpage
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.imgur.com/SEOWuO5.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),url(https://i.imgur.com/SEOWuO5.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+.navigationbar
+{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0px;
+    
+}
+
+.logo
+{
+    width: 300px;
+    cursor: pointer;
+}
+
+ul li 
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+ ul li a {
+    font-family: "Exo 2", sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    position: relative;
+    text-transform: uppercase;
+}
+
+ul li ::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009888;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+   transition: 0.5s;
+}
+
+ul li :hover::after
+{
+    width: 100%;
+}
+
+ul li a:hover
+{
+    color:aqua
+} 
+
+.submenu
+{
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    top: 100;
+    margin-left: -35px ;
+    opacity: 0;
+    text-decoration: none;  
+    padding: 5px 5px;
+    
+}
+.submenu li
+{
+    margin-bottom: 10px;
+}
+
+li:hover .submenu
+{  
+    display: flex;
+    color: white; 
+    text-decoration: none;
+    opacity: 1;
+    background-color: transparent;
+
+}
+
+ul:not(:hover) .submenu {
+    display: none;
+}
+
+.content
+{
+    width: 85%;
+    margin:20px auto;   
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-image: url(https://i.imgur.com/10HEDFx.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.0)),url(https://i.imgur.com/10HEDFx.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+
+
+
+.title {
+    flex-basis: 50%;
+    white-space: nowrap;
+    margin: auto;
+    text-align: center; 
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400px;
+}
+
+
+
+h1
+{
+    margin-left: -5px;
+    color: white;
+    font-size: 100px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+}
+button{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25); 
+    padding: 10px 5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .75);
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    border-radius: 50px; 
+    width: 180px; 
+    height: 60px; 
+    
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+
+
+/* topics.html*/
+
+.coverpage2
+{
+    width: 100%;
+    height: 131vh;
+    background-image: url(https://i.imgur.com/9jsqdo8.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/9jsqdo8.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;            
+}
+
+.logo2
+{
+    width: 30px;  
+}
+
+.title2
+{
+    background-color: #555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    margin: 0 auto 10px;
+    padding: 10px;
+    width: 270px;
+    border-radius: 10px;
+    width: 94%;
+
+    display: flex;    
+    padding: 5px;
+    display: row;
+    justify-content: center;
+    
+}
+
+.title2 h1
+{
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+ 
+
+.cardsection2 {
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+.cardt1 {
+   
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+
+
+
+
+
+
+.cardt2 {
+ 
+  
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+.cardt3 {
+ 
+   
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+.cardt4 {
+  
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+.cardt5 {   
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+.cardt6 {
+   
+    width: 670px;
+    height: 236px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px auto; 
+    border: 2px solid transparent; 
+}
+
+
+
+.topicbackground
+{
+    height: 160px;
+    object-fit: cover;
+    width: 670px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+}
+
+.main
+{      
+    padding: 5px 15px;
+    width: 670px;
+    height: 75px;
+    background-color: #24252A;
+    border-radius: 6px;
+}
+
+.titlet1
+{
+    text-decoration: none;
+    color:white
+}
+
+.t1description
+{
+    text-decoration: none;
+    color:white
+}
+
+.t1author
+{
+    text-decoration: none;
+    color:white
+}
+
+.cardsection2 .cardt1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.cardsection2 .cardt2 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.cardsection2 .cardt3 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.cardsection2 .cardt4 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.cardsection2 .cardt5 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.cardsection2 .cardt6 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*About.html   */
+
+
+
+.navigationbar2
+{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0px;
+    background-color: #000000;
+    
+}
+
+.header3
+{
+    background-image: url(https://i.imgur.com/JllkfiP.jpeg);
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://i.imgur.com/JllkfiP.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 85%);
+    position: relative;
+}
+
+.header3 h1{
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 8px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+.header3 h2
+{
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2name
+{
+    color: white;
+}
+
+.h2name a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.h2name a
+{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.title3
+{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.aboutbackground
+{
+    background-image: url(https://www.keromakura.net/support/img/contact_background.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.infotitle
+{
+    
+    display: block;
+    font-size: 22px;
+    color: #000000;
+    margin-top: 100%;
+}
+
+.line
+{
+    background-color: #24252A;
+    height: 15px;
+    line-height: 15px;
+    padding-bottom: 40px;
+}
+
+.content3
+{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0 50px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbackground
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.topbackground img
+{
+    width: 100%;
+}
+
+.teamtitle
+{
+    font-family: 'Futura PT', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    margin-top: 100px;
+}
+
+.teamcardsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.teamcard
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+}
+
+
+
+.profilepicture
+{
+    height: 200px;
+    height: 200px;
+    position: relative;
+    width: relative;
+}
+
+.picture
+{
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+.picture2
+{
+    width: 220px;
+    height: 200px;
+    margin: 0;
+}
+
+.picture4
+{
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+.name
+{
+    color: black;
+    font: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.section
+{
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #1c1d1e;
+    width: 100%;
+    height: auto;
+    z-index: 500;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%); 
+}
+
+.footbg
+{
+    background-image: url(https://i.imgur.com/naOBX6x.png   );
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-top: 130px;
+}
+
+.Referencessection
+{
+    
+    position: relative;
+    max-width: 500px;
+    width: 70%;
+    top: 30%;
+    left: 30%;
+    color: white;
+    
+}
+
+.title4 p
+{
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0rem;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+.Referencesbox
+{    
+    display: flex;
+    
+    margin: 15px;  
+    margin-left: -60px;
+   
+}
+
+
+
+.Referencesbox ul 
+{
+    
+    font-weight: bold;
+}
+
+.Referencesbox ul li
+{
+    font-family: 'Futura PT', sans-serif;
+    height: 32px;
+    list-style: none;
+}
+
+.topiclink
+{
+    
+    display: block;
+}
+.topiclink a
+{
+    font-family: 'Futura PT', sans-serif;
+}
+
+.userlink
+{
+    display: block;
+}
+
+.userlink a
+{
+      font-family: 'Futura PT', sans-serif;
+}
+
+.logoarea
+{
+    
+    padding-bottom: 100px;
+    transform: translate(-12px);
+    display: flex;
+    gap: 10px;
+    
+}
+
+.badge img
+{
+    width: 60px;
+}
+
+.presented-by {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presented-by p
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Futura PT', sans-serif;
+}
+
+.bottompage
+{
+  position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 580px;
+}
+   
+
+.bottompage img
+{
+    width: 100%;
+}
+
+
+/* each topic */
+.header4content
+{    
+    width: 85%;
+    margin: 1px auto; 
+    padding: 20px; 
+    background-color: #333; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.header4row
+{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.header4rowbackground
+{
+    background-color: #333;
+}
+
+.header4title
+{
+    display: flex;
+}
+
+.header4title h1
+{
+    font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.2;
+   letter-spacing: 2px;
+}
+
+.researchcontent
+{
+    width: 85%;
+    margin:20px auto;
+    background-color: #444; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.researchsummary
+{
+    text-align: left;
+   
+    padding: 20px 10px;
+}
+
+.researchsummary p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    margin: 0;    
+   letter-spacing: 2px;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+   
+    color: white;
+}
+
+.header4container
+{
+    width: 100%;
+    height: 200vh;
+    background-image: url(https://i.imgur.com/QnL8k18.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/QnL8k18.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;            
+}
+
+.header4container2
+{
+    width: 100%;
+    height: 240vh;
+    background-image: url(https://i.imgur.com/DT7qo32.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/DT7qo32.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;          
+}
+
+.header4container3
+{
+    width: 100%;
+    height: 244vh;
+    background-image: url(https://i.imgur.com/pU1TK4v.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/pU1TK4v.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;          
+}
+
+.header4container4
+{
+    width: 100%;
+    height: 233vh;
+    background-image: url(https://i.imgur.com/9hRAWak.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/9hRAWak.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;          
+}
+
+
+.header4container5
+{
+    width: 100%;
+    height: 150vh;
+    background-image: url(https://i.imgur.com/ab3wZTZ.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/ab3wZTZ.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;       
+}
+
+.header4container6
+{
+    width: 100%;
+    height: 223vh;
+    background-image: url(https://i.imgur.com/aOW6mfH.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.imgur.com/aOW6mfH.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;          
+}
+
+.researchbackgroundimg
+{
+ background-image: url(https://i.imgur.com/q24udZv.jpeg );
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 800px;
+ height: 400px;
+ background-position: center;
+ margin: 0 auto;
+}
+
+
+
+.researchbackground2img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    background-image: url(https://i.imgur.com/FCsGV2q.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.researchbackground3img
+{
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    background-image: url(https://i.imgur.com/lNGclPh.jpeg);
+}
+
+.researchbackground4img
+{
+    background-image: url(https://i.imgur.com/6JWoH74.jpeg);
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+.researchbackground6img
+{
+    background-image: url(https://i.imgur.com/ksmoByF.jpeg);
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+.researchsummary h2
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.footercontent
+
+{
+    margin: 1px auto; 
+    padding: 20px; 
+    background-color: #333;   
+    display: flex;    
+    flex-direction: column;
+    font-size: 14px;
+    width: 85%
+}
+
+.contentauthor
+{
+    background: none;
+    flex-direction: row;
+}
+
+.footercontentleft
+{
+    flex:1;
+}
+
+.referencetopic
+{
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    font-size: 14px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.referencetopic h1
+{   
+    color: white; 
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 0 0 20px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+
+}
+
+.referencelink
+{
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.referencelink a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.footercontentright
+{
+    height: 100%;
+    margin-left: 10px;
+}
+
+.memberlinkscontainer
+{
+    background-color: #555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    margin: 0 auto 10px;
+    padding: 10px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+.memberlinkscontainer a
+{
+    text-decoration: none;
+}
+
+.memberportrait
+{
+    margin-top: -113px;
+    background-image: url(https://i.imgur.com/1hTksdU.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: block;
+    height: 250px;
+    margin: 10px auto;
+    position: relative;
+    width: 250px;
+}
+
+.memberportrait2
+{
+    margin-top: -113px;
+    background-image: url(https://assets.ppy.sh/artists/236/cover.jpg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: block;
+    height: 250px;
+    margin: 10px auto;
+    position: relative;
+    width: 250px;
+}
+
+.memberportrait3
+{
+    margin-top: -113px;
+    background-image: url(https://i.imgur.com/AWhLQN2.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: block;
+    height: 250px;
+    margin: 10px auto;
+    position: relative;
+    width: 250px;
+}
+
+.memberportrait4
+{
+    margin-top: -113px;
+    background-image: url(https://i.imgur.com/bzVyYCx.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: block;
+    height: 250px;
+    margin: 10px auto;
+    position: relative;
+    width: 250px;
+}
+
+
+.memberlinkbutton
+{
+    align-items: center;
+    background-color: #1877F2;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    transition: .1s ease-out;    
+    user-select: none;
+}
+
+.memberlinkbuttonfacebook
+{
+    align-items: center;
+    background-color: #1877F2;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    transition: .1s ease-out;    
+    user-select: none;
+}
+
+.memberlinkbuttongithub
+{
+    align-items: center;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    transition: .1s ease-out;    
+    user-select: none;
+}
+
+.memberlinkbuttontwitter
+{
+    align-items: center;
+    background-color: #1DA1F2;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    transition: .1s ease-out;    
+    user-select: none;
+}
+
+
+.footerbackground
+{
+    background-image: url(https://i.imgur.com/gxeJu5z.jpeg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.iconbutton
+{
+    width: 24px; 
+    height: 24px; 
+    background-image: url(https://i.imgur.com/GWjXUWM.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.iconbutton2
+{
+    width: 24px; 
+    height: 24px; 
+    background-image: url(https://i.imgur.com/EkZN56O.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iconbutton3
+{
+    width: 24px; 
+    height: 24px; 
+    background-image: url(https://i.imgur.com/zmwXJeP.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.memberlinkbuttontext
+{
+    text-decoration: none;
+    color: white;
+    flex-basis: 100%;
+    font-weight: 600;
+    padding-left: 20px;
+    text-align: left;
+}
+.memberlinkbuttonfacebook:hover
+{
+    background-color: #145dbf;
+}
+
+.memberlinkbuttongithub:hover
+{
+    background-color: #222;
+}
+
+.memberlinkbuttontwitter:hover
+{
+    background-color: #0d8ae6;
+}
+
